@@ -1,0 +1,27 @@
+<mat-drawer-container class="sidenav">
+    <mat-drawer mode="side" opened class="sidenav-menu">
+        <app-side-nav></app-side-nav>
+    </mat-drawer>
+    <mat-drawer-content class="sidenav-content">
+        <div class="select">
+            <span>Select the instrument you want to trade: </span>
+            <app-trading-content (changeSelect)="getSelectedAssets($event)"></app-trading-content>
+        </div>
+        
+        <div class="row ml-2">
+            <div class="col-md-3">
+                <app-order-tab></app-order-tab>
+            </div>
+    
+            <div class="col-md-6">
+                <app-graph-tab [selectedAssets]="tradingContentSelectedAsset"></app-graph-tab>
+            </div>
+    
+            <div class="col-md-3">
+                <app-history-tab></app-history-tab>
+            </div>
+        </div>
+        
+        
+    </mat-drawer-content>
+</mat-drawer-container>

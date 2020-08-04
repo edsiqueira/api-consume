@@ -1,0 +1,13 @@
+<mat-toolbar>
+    <span>Time:</span>
+    <span class="space"></span>
+   
+    <div fxLayoutGap="20px">
+        <a mat-raised-button (click)="getPeriodClick('1MIN')">M</a>
+        <a mat-raised-button (click)="getPeriodClick('1HRS')">H</a>
+        <a mat-raised-button (click)="getPeriodClick('1DAY')">1D</a>
+        <a mat-raised-button (click)="getPeriodClick('7DAY')">1W</a>
+        <a mat-raised-button (click)="getPeriodClick('1MTH')">1M</a>
+    </div>
+</mat-toolbar>
+

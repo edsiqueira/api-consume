@@ -1,0 +1,8 @@
+<mat-card>
+    <div>
+        <app-period (periodClick)="getPeriod($event)"></app-period>
+    </div>
+    <mat-card-content>
+        <app-chart [selectedAssets]="selectedAssets" [selectedPeriod]="selectedPeriod"></app-chart>
+    </mat-card-content>
+</mat-card>

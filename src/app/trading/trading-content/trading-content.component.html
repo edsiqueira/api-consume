@@ -1,0 +1,6 @@
+<mat-form-field appearance="fill" class="w-75">
+    <mat-label>Choose an option</mat-label>
+    <mat-select (selectionChange)="dropDownSelect($event)">
+        <mat-option *ngFor="let opt of options" value="{{opt.asset_id_base}}_{{opt.asset_id_quote}}">{{opt.asset_id_base}}/{{opt.asset_id_quote}}</mat-option>
+    </mat-select>
+</mat-form-field>

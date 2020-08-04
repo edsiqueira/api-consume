@@ -1,0 +1,13 @@
+.sidenav{
+    height: 100%;
+    background-color: azure;
+}
+
+.sidenav-menu{
+    width: 200px;;
+}
+
+.select{
+    margin: 20px;
+
+}
